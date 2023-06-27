@@ -6,25 +6,6 @@
   }
 }
 
-%tooltip {
-  position: absolute;
-  padding: 0.25em 0.5em;
-  border-radius: var(--borderRadius);
-  top: -0.25rem;
-  transform: translateY(-100%);
-
-  background-color: var(--bgColor-1);
-  @extend %cardShadow;
-
-  text-align: center;
-  pointer-events: none;
-
-  opacity: 0;
-  transition: opacity ease-out 0.15s;
-
-  z-index: 2;
-}
-
 %contentBox {
   background-color: var(--bgColor-2);
   box-shadow: var(--contentShadow);
@@ -33,12 +14,10 @@
 
 %button {
   cursor: pointer;
-  padding: 1rem;
   background-color: var(--buttonBg-alt);
   outline: 2px solid var(--buttonOutline);
   border-radius: var(--borderRadius);
   color: var(--buttonText-alt);
-  font-weight: 700;
   &:hover,
   &:focus-visible {
     background-color: var(--buttonOutline);
